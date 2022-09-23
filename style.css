@@ -1,0 +1,265 @@
+/************************
+          Reset
+************************/
+html {
+    font-size: 112.5%;
+    background-color: hsl(217, 54%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/************************
+    Body attributes
+************************/
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100%;
+    max-width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/************************
+    import google font
+    font-family: 'Outfit', 
+    sans-serif;
+************************/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*/
+/************************
+    <main> Container
+************************/
+
+.container {
+    max-width: 21rem;
+    width: 18rem;
+    max-height: 740px;
+    height: 30rem;
+    font-family: 'Outfit', sans-serif;
+    border-radius: 1rem;
+    background-color: hsl(216, 50%, 16%);
+    flex-direction: column;
+}
+
+/************************
+  <div> container-image
+************************/
+
+.container-image {
+    height: 15.5rem;
+    width: 87%;
+    border-radius: 0.5rem;
+    background-image: url('./images/image-equilibrium.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 1.3rem auto 1.3rem auto;
+}
+
+/************************
+  image overlay sets the
+  overlay as transparent
+  ready for the hover
+  styling
+************************/
+
+.image-overlay {
+    height: 15.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: cyan;
+    background-image: url('./images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+
+/************************
+ <div> container-details
+************************/
+
+.container-details {
+    height: 7.8rem;
+    width: 90%;
+    margin: auto;
+    padding-left: 0.5rem;
+}
+
+/************************
+  <div> container-details
+       <h1> element
+************************/
+
+.container-details h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+    /*margin: auto 1.3em 1em 1.2em;*/
+}
+
+/************************
+  <div> container-details
+       <p> elememt
+************************/
+
+.container-details p {
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    letter-spacing: .8px;
+    line-height: 1.4rem;
+    padding-top: .8em;
+    /*margin: auto 1.3em 1em 1.7em;*/
+}
+
+/************************
+  <div> details-bottom
+************************/
+
+.details-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: .8rem;
+}
+
+/************************
+  styling values for 
+  <diV> details-bottom
+************************/
+
+.ethereum {
+    color: hsl(178, 100%, 50%);
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .3rem;
+}
+
+.time {
+    color: hsl(215, 51%, 70%);
+    font-size: .85rem;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.clock-icon {
+    margin-right: 0.2rem;
+    margin-top: ;
+}
+
+/************************
+  <div> details-creator
+  sets the dimensions for 
+  the container and 
+  includes a top border
+************************/
+
+.details-creator {
+    width: 90%;
+    height: 4rem;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin: auto;
+    display: flex;
+}
+
+/************************
+  avatar-jules sets the 
+  properties for the 
+  image
+************************/
+
+.avatar-jules {
+    height: 1.7rem;
+    width: auto;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+/************************
+  the next two classes
+  set the properties for 
+  the text in the <div>
+  details-creator
+************************/
+
+.creation-of {
+    color: hsl(215, 51%, 70%);
+    margin-top: 1.3rem;
+    margin-left: .9rem;
+    font-size: .85rem;
+    letter-spacing: .5px;
+}
+
+.jules-wyvern {
+    color: hsl(0, 0%, 100%);
+    margin-top: 1.3rem;
+    margin-left: .3rem;
+    font-size: .85rem;
+    letter-spacing: .4px;
+    text-decoration: none;
+}
+
+/************************
+  sets the link 
+  attributes and removes
+  the underline
+************************/
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+/************************
+  sets the hover 
+  properties for the 
+  creators name by color
+  and pointer attribute
+************************/
+
+.jules-wyvern:hover,
+a:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+/************************
+  sets the hover 
+  properties for the 
+  image overlay
+************************/
+
+.image-overlay:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition-duration: 500ms;
+}
+
+
+
+/************************
+   Attribution styling  
+************************/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
